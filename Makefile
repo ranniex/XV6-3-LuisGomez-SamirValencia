@@ -162,6 +162,8 @@ UPROGS=\
 	_cat\
 	_echo\
 	_forktest\
+        _foo\
+	_cprio\
 	_grep\
 	_init\
 	_kill\
