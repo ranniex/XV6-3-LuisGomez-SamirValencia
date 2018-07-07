@@ -14,6 +14,7 @@ struct {
 
 static struct proc *initproc;
 
+int numSysCalls=-1;
 int nextpid = 1;
 extern void forkret(void);
 extern void trapret(void);
@@ -582,4 +583,10 @@ break;
 release(&ptable.lock);
 
 return pid;
+}
+
+int numSys(){
+
+cprintf("Se han realizado %d llamadas al sistema.\n",numSysCalls);
+return numSysCalls;
 }

@@ -25,6 +25,7 @@ int sleep(int);
 int uptime(void);
 int cps(void);
 int chpr(int pid, int priority);
+int numSys(void);
 // ulib.c
 int stat(char*, struct stat*);
 char* strcpy(char*, char*);

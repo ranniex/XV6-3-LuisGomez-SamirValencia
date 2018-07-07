@@ -7,6 +7,19 @@
 #include "mmu.h"
 #include "proc.h"
 
+/*int numSysCalls=-1;
+
+int sys_numSys(void){
+if(numSysCalls==-1) return numSysCalls;
+else return numSysCalls+1;
+}*/
+
+int
+sys_numSys(void){
+	return numSys();
+}
+
+
 int
 sys_fork(void)
 {
